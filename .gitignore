@@ -1,0 +1,12 @@
+﻿# Ignore SQLite database
+app.db
+
+# Ignore logs directory contents
+/logs/*
+!/logs/.gitkeep
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
