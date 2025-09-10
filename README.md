@@ -76,6 +76,11 @@ uvicorn app.main:app --reload
 ```
 
 By default, the server looks for models in `models/model_v1.onnx` and `models/model_v2.onnx`. If these files are not found, it will use the built‑in fallback (a simple rule‑based classifier).
+I recommend using distilbert-base-uncased-finetuned-sst-2-english, the ONNX file is located at:
+```
+https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/blob/main/onnx/model.onnx
+```
+Place in the models folder and rename to model_v1.onnx
 
 ### Open Swagger UI
 
@@ -160,7 +165,3 @@ curl -X POST http://127.0.0.1:8000/api/predictions \
 ```
 
 The above commands demonstrate how to register, authenticate, and perform a sentiment prediction using the API from the command line.
-
----
-
-This README provides a concise overview of the functionality in the Practical Sentiment Analysis API. Refer to the source code and tests for further implementation details and customization options.
