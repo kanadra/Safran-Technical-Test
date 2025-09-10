@@ -76,11 +76,8 @@ uvicorn app.main:app --reload
 ```
 
 By default, the server looks for models in `models/model_v1.onnx` and `models/model_v2.onnx`. If these files are not found, it will use the built‑in fallback (a simple rule‑based classifier).
-I recommend using distilbert-base-uncased-finetuned-sst-2-english, the ONNX file is located at:
-```
-https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/blob/main/onnx/model.onnx
-```
-Place in the models folder and rename to model_v1.onnx
+I recommend using distilbert-base-uncased-finetuned-sst-2-english, the ONNX file is located [here](https://huggingface.co/models?library=onnx&pipeline_tag=text-classification)
+Place this in the models folder and rename to model_v1.onnx
 
 ### Open Swagger UI
 
